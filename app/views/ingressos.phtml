@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/ingressos.css">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <title>Starlit</title>
+</head>
+<body>
+ <!--Header-->
+ 
+    <nav class="nav-bar">
+        <div class="logo"><a href="/"><img src="./img/logo1.png" alt="Logo" height="55px" width="130px"></a> 
+        </div>
+
+        <div class="nav-list"> 
+            <ul>
+            <li class="nav-item"> <a href="/explorar" class="nav-link"> Explorar </a></li>
+            <li class="nav-item"> <a href="/ingressos" class="nav-link"> Ingressos </a></li>
+            <li class="nav-item"> <a href="/login" class="nav-link"> Login </a></li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()"><img class="icon menu" src="/img/icon menu.png" alt="" height="30px" width="30px"></button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"> <a href="/explorar" class="nav-link"> Explorar </a></li>
+            <li class="nav-item"> <a href="/ingressos" class="nav-link"> Ingressos </a></li>
+            <li class="nav-item"> <a href="/login" class="nav-link"> Login </a></li>
+        </ul>
+    </div>
+
+    <!--Palavra-->
+        <div class="palavra">
+            <img src="/img/Ingressos.png" alt="">
+        </div>
+
+
+    <!--INGRESSOS-->
+    <div class="tickets-container">
+    <div class="container" id="meia-ticket">
+        <img src="/img/meia.png" id="meia" height="200px">
+        <p><b>R$350,00</b></p>
+        <div class="button-container"> 
+            <button type="button" class="btn" onclick="addToCart('meia')">Comprar</button>
+        </div>
+    </div>
+    
+    <div class="container" id="inteira-ticket">
+        <img src="/img/inteira.png" id="inteira" height="200px">
+        <p><b>R$700,00</b></p>
+        <div class="button-container"> 
+            <button type="button" class="btn" onclick="addToCart('inteira')">Comprar</button>
+        </div>
+    </div>
+
+    <div class="container" id="vip-ticket">
+        <img src="/img/vip.png" id="vip" height="200px">
+        <p><b>R$1200,00</b></p>
+        <div class="button-container"> 
+            <button type="button" class="btn" onclick="addToCart('vip')">Comprar</button>
+        </div>
+    </div>
+</div>
+
+<!--FOOTER-->
+    <footer class="footer">
+  <p>@starlitfestival</p><br>
+  <a href="./Termo de política e privacidade.pdf">Política de Privacidade e Termos de Uso</a><br>
+</footer>
+
+<script src="./js/scripts.js"></script>
+<script src="./js/ingressos.js"></script>
+ 
+</body>
+</html>
